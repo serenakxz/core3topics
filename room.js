@@ -17,11 +17,21 @@ function reShadow() {
 }
 
 
+
  function gfg_Run() { 
   noShadow();
   changeColor('#FFFFFF'); 
+  NaviChangeColor('#121212');
 }
 
+
+var tabOne=document.querySelector("#tab-one");
+tabOne.addEventListener("click", function backHome() {
+  window.open("index.html")});
+
+  function NaviChangeColor(color2) {
+    document.body.style.color = color2;
+  }
 
 /*var timesClicked = 0;
 
@@ -42,10 +52,18 @@ button.addEventListener('click', function() {
     button.innerHTML = button.getAttribute("data-text-original");
     changeColor('#121212');
     reShadow();
+    NaviChangeColor('#ffffff');
   } else {
     button.setAttribute("data-text-original", button.innerHTML);
     button.innerHTML = button.getAttribute("data-text-swap");
   }
 }, false);
+
+var hoverImg = document.querySelector(".hover_img");
+var highLight = document.getElementById("highlight");
+console.log(highLight);
+highLight.addEventListener("mouseenter", function showImg(){
+  hoverImg.style.display = "block";
+})
 
 

@@ -66,8 +66,8 @@
         };
     }
   
-    var container = document.getElementById('canvas');
-    init(container, 1800, 1000, '#121212');
+ var container = document.getElementById('canvas');
+init(container, 1350, 1000, '#121212');
   
   })();
   
