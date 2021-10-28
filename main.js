@@ -67,7 +67,7 @@
     }
   
  var container = document.getElementById('canvas');
-init(container, 1350, 1000, '#121212');
+init(container, 1600, 1200, '#121212');
   
   })();
   
