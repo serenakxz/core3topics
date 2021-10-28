@@ -213,7 +213,7 @@ function NaviChangeColor(color2) {
   changeColor('#FFFFFF'); 
   NaviChangeColor('#121212');
   showImg();
-  disableHover();
+  //disableHover();
   
 }
 
@@ -249,7 +249,7 @@ button.addEventListener('click', function() {
     reShadow();
     NaviChangeColor('#ffffff');
     hideImg();
-    enableHover();
+   // enableHover();
   } else {
     button.setAttribute("data-text-original", button.innerHTML);
     button.innerHTML = button.getAttribute("data-text-swap");
