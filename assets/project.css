@@ -12,11 +12,11 @@
 
 body{
     font-size: 16px;
-    background: #121212; 
+    background: white; 
     font-family: plantin, sans-serif;
     font-weight: 300;
     font-style: normal;
-    color: white;
+    color: 121212;
 }
 
 
@@ -71,25 +71,88 @@ body{
   display: block;
 }
 
-.projects{
-  color:#121212;
-}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    font-family:sangBleuRegular;
+    width: 50%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
 .highlight{
-  color:white;
+  color:rgb(0, 128, 248);
 }
 .hover_img {
-  position:relative; 
-  padding: 10px;
-  float: right;
-  width: 10vw;
+cursor:-webkit-grab;
+  position:absolute; 
+  width: 35vw;
+  opacity: 80%;
+  display:block;
+  z-index: 90;
 }
 
-p .highlight { position:relative; }
-p .highlight span { position:relative; display:none; }
-/*
-p .highlight:hover span { display:inline; position: absolute; z-index: 99; }
-*/
+#exhibition{
+top: 0vh;
+left: 5vw;
+}
+#wiki{
+  top: 15vh;
+left: 0vw;
+}
+#manifesto{
+  top: 25vh;
+left: 12vw;
+}
+
+#mantra{
+top: 7vh;
+left: 35vh;
+}
+
+#reading{
+top: 12vh;
+left: 30vh;
+}
+
+.image-stack {
+  position: absolute; 
+  top: 30vh;
+  left:40%;
+}
+
+
+
 
 .highlight:hover{
 cursor: pointer;
@@ -100,66 +163,18 @@ cursor: pointer;
  font-size: 14px;
 }
 .section{
-    color:#121212;
-    text-decoration: underline; 
-    
+    color:#121212;   
 }
 
   
- /* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-}
-#contact{
-  color: #121212;
-}
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-} 
-  
 
 
 
-#demo1,#demo2,#demo3{
-    text-shadow: 2px 2px 1px;
-}
 .paraOne,.paraTwo,.paraThree{
  margin: 50px;
  width: 33%;
 }
-#demo1{
-  cursor: zoom-in;
-  cursor:url(zoom.png),auto;
-}
+
 .paraOne{
 padding-top:100px;
 }
@@ -174,37 +189,32 @@ padding-top:180px;
 
 .center {
     margin: 10px;
-    margin-top: 50px;
+    margin-top: 10px;
     position: absolute;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
 
-  .arrow {
-    border: solid #FFFCDF;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 6px;
-    margin-top: 20px;
-    margin-left: 40%;
-    left: 50%; 
-    transform: rotate(-135deg);
-    -webkit-transform: rotate(-135deg);
-  }  
 
 .clickText{
   font-family:sangBleuRegular;
   font-size: 18px;
   margin-left: 30%;
 }
-
+h2{
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    font-family:sangBleuRegular;
+    display: inline-block;
+}
 button{
-    background-color:#121212;
+    background-color:white;
     border: none;
-    color: white;
-    font-size: 20px;
-    padding: 15px 32px;
+    color: #121212;
+    font-size: 24px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     font-family:sangBleuRegular;
@@ -216,8 +226,8 @@ button{
 
 .button1:hover {
     border-radius: 50%;
-    background-color:#FFFFFF;
-    color: #121212;
+    background-color:#121212;
+    color: white;
   }
 
   .button1:visited {
