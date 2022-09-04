@@ -1,4 +1,3 @@
-
 var exhibitionMotion = document.getElementById("exhibition");
 var mantraMotion = document.getElementById("mantra");
 var wikiMotion = document.getElementById("wiki");
