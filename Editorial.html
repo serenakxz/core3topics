@@ -10,75 +10,41 @@
 </head>
 
 <body>
-<!-- The Modal -->
-<div id="myModal" class="modal">
 
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <p>Email: serenakxz@gmail.com</p>
-    </div>
-  
-  </div>
 
-    <div class="navi">
-        <div class="tab" id="tab-one">HOME</div>
-        <div class="tab" id="tab-two">RESUME</div>
-        <div class="dropdown">
-            <div class="tab" id="tab-three">PROJECTS</div>
-            <div class="dropdown-content">
-                <a href="Editorial.html">Editorial Design</a>
-                <a href="#">Web Design</a>
-                <a href="#">UI+Motion Graphics</a>
-            </div>
-        </div>
-        <div class="tab" id="tab-four">CONTACT</div>
+    <div class="header">
+        <h1>Kexuan Zhang</h1>
+        <h1>2022</h1>
     </div>
     <div class="center">
-        <button class="button1" id="button1" onclick="backToOverview()">
-           <
-        </button>
-       <h2>
-           [ Editorial Design ]
-       </h2>
+
+        <h2>
+            [ Editorial Design ]
+        </h2>
     </div>
-    
+
     <div class="content">
         <div class="image-stack">
-                <img class="hover_img" src="assets/exhibition.png" alt="image" id="exhibition">
-                 <img class="hover_img" src="assets/wikibook.png" alt="image" id="wiki">
-                 <img class="hover_img"src="assets/manifestoposter.png" alt="image" id="manifesto">
-                 <img class="hover_img"src="assets/mantramerch.png" alt="image" id="mantra">
-                 <img class="hover_img"src="assets/readingreader.png" alt="image" id="reading">
+            <img class="hover_img" src="assets/exhibition.png" alt="image" id="exhibition">
+            <img class="hover_img" src="assets/wikibook.png" alt="image" id="wiki">
+            <img class="hover_img" src="assets/manifestoposter.png" alt="image" id="manifesto">
+            <img class="hover_img" src="assets/mantramerch.png" alt="image" id="mantra">
+            <img class="hover_img" src="assets/readingreader.png" alt="image" id="reading">
         </div>
         <div class="paraOne">
             <div class="section">
-                <p id="demo1">Here are some of my editorial works.</br> <a class="highlight">Exhibition
-                    Postsers</a>It is a
-                design for
-                the exhibition—“I don’t like it.”,featuring artworks that had once been disliked by the
-                public, rejected by art critics, or hated by the artists themselves. <a
-                    class="highlight">Wikibook</a> I designed the content of a full Wikipe-
-                dia article “ Religion in China.” Using calm and orga-
-                nized design aesthetics, I would like to communicate
-                the profound cultural heritage of this topic. <a class="highlight">Manifesto Poster</a> For this
-                project, I designed a poster for the Apple’s
-                manifesto--“Here’s to the crazy ones” and applied the
-                design to Shanghai Youth Art Fair 2020. I explored un-
-                conventional compositions to capture the unique spirit
-                and boldness of this manifesto. <a class="highlight">Mantra Merch</a> I designed for the
-                mantra “All is well. I am loved.” Using pure typographic design in black and
-                white, I would like to explore the
-                process from confusion to certainty. <a class="highlight"> Posters Collection</a> I designed a
-                series of posters based on the ideas of influential scholars of Graphic Design. Then I made a zine
-                titled “Aha? Design!” to showcase this serious with the article MASSIMO VIGNELLI VS. ED BENGUIAT
-                (SORT OF).
+                <p id="demo1">
+                    <a class="highlight" onclick="exhibition();">Exhibition Postsers</a><spam id="exhibition_p">&nbsp It is a design for the exhibition—“I don't like it.”,featuring artworks that had once been disliked by the public, rejected by art critics, or hated by the artists themselves.&nbsp </spam>
+                    <a class="highlight"  onclick="wikibook();">Wikibook</a><spam id="wikibook_p">&nbsp I designed the content of a full Wikipedia article “ Religion in China.” Using calm and organized design aesthetics, I would like to communicate the profound cultural heritage of this topic.&nbsp </spam>
+                    <a class="highlight"  onclick="manifesto();">Manifesto Poster</a> <spam id="manifesto_p">&nbsp For this project, I designed a poster for the Apple's manifesto--“Here's to the crazy ones” and applied the design to Shanghai Youth Art Fair 2020. I explored unconventional compositions to capture the unique spirit and boldness of this manifesto.&nbsp </spam>
+                    <a class="highlight" onclick="merch();">Mantra Merch</a><spam id="merch_p"> &nbsp I designed for the mantra “All is well. I am loved.” Using pure typographic design in black and white, I would like to explore the process from confusion to certainty.&nbsp</spam>
+                 <a class="highlight" onclick="poster();"> Posters Collection</a><spam id="poster_p">&nbsp I designed a series of posters based on the ideas of influential scholars of Graphic Design. Then I made a zine titled “Aha? Design!” to showcase this serious with the article MASSIMO VIGNELLI VS. ED BENGUIAT (SORT OF).&nbsp</spam>
                 </p>
             </div>
 
-       </div>
-        
-    </div> 
+        </div>
+
+    </div>
 
 
     <script src="section.js"></script>
